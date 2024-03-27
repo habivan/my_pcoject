@@ -5,3 +5,4 @@ define('VIEWS', ROOT . '/views');
 define('CONTROLLER', ROOT . '/controller');
 define('CORE', ROOT . '/core');
 define('CLAS', ROOT . '/class');
+define('PATH', 'http://progect');
