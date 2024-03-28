@@ -2,7 +2,7 @@
 
 /** @var $router */
 
-$router->get('', 'index.php')->only('auth');
+$router->get('', 'index.php');
 $router->get('about', 'about.php');
 $router->get('login', 'login.php')->only('auth');
 // $router->get('/home', '/index.php');

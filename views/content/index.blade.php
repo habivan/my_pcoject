@@ -1,6 +1,6 @@
 <?php require_once VIEWS . '/incs/header.php';?>
 
-<div class="card" style="width: 18rem;">
+<div class="card m-3" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Заголовок карточки</h5>
@@ -8,7 +8,7 @@
     <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card m-3" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Заголовок карточки</h5>

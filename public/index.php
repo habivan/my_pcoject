@@ -1,6 +1,7 @@
 <?php 
 session_start();
-$_SESSION['user'] = 'Ivan';
+// $_SESSION['user'] = 'Ivan';
+// unset($_SESSION['user']);
 require_once dirname(__DIR__) . '/core/constant.php';
 require_once CORE . '/func.php';
 require_once CLAS . '/Router.php';

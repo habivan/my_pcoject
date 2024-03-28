@@ -14,8 +14,12 @@ class Router {
     public function match(){
         foreach($this->router as $rout){
             if($rout['uri'] === $this->uri and $this->method === $rout['method']){
-                require_once CONTROLLER . "/{$rout['controller']}";
-                break;
+                if(!isset($rout['middleware'])){
+                    require_once CONTROLLER . "/{$rout['controller']}";
+                    break;
+                }else {
+                    redirect('/');
+                }
             }
             
         }
