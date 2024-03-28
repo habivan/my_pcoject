@@ -17,7 +17,7 @@ class Router {
                 require_once CONTROLLER . "/{$rout['controller']}";
                 break;
             }
-    
+            
         }
     }
 
@@ -28,6 +28,12 @@ class Router {
             'method' => $method,
         ];
 
+        return $this;
+    }
+
+    public function only($middleware){
+        // dump($this->router);
+        $this->router[array_key_last($this->router)]['middleware'] = $middleware;
         return $this;
     }
 

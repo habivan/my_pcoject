@@ -29,7 +29,7 @@ function redirect($url = ''){
     die;
 }
 
-function check($url = '/'){
+function check_auth($url = '/'){
     if(!$_SESSION['user']){
         redirect($url);
     }
